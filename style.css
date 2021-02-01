@@ -1,4 +1,4 @@
-﻿@page{
+@page{
   size: letter portrait;
   margin: 0;
 }
@@ -47,7 +47,6 @@ h1, h2, h3{
 
 li{
   list-style-type: none;
-  font-size: 8pt
 }
 
 #main{
@@ -61,9 +60,9 @@ li{
   float: right;
   position: relative; /* for disclaimer */
   width: var(--sidebar-width);
-  height: 100%;
+  height: 108%;
   padding: 0.6in var(--sidebar-horizontal-padding);
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   font-size: 8.5pt;
 }
 
@@ -93,7 +92,7 @@ li{
 }
 
 .subtitle{
-  font-size: 10pt;
+  font-size: 8pt;
 }
 
 /*** categorial blocks ***/
@@ -269,7 +268,6 @@ li{
 
 .details div{
   clear: both;
-	font-size: 8pt;
 }
 
 .details .location::before{
@@ -298,7 +296,7 @@ li{
 #main li::before{
   position: relative;
   margin-left: -4.25pt;
-  content: '•';
+  content: 'â€¢ ';
 }
 
 .details .concise ul{
@@ -308,11 +306,11 @@ li{
   columns: 2;
 }
 
-.details .concise li{
+.details .concise li {
   margin: 0 !important;
 }
 
-.details .concise li{
+.details .concise li {
   margin-left: 0 !important;
 }
 
@@ -320,37 +318,41 @@ li{
 
 /* sidebar */
 
-#sidebar h1{
+#sidebar h1 {
   font-weight: 400;
   font-size: 11pt;
 }
 
-.side-block{
-  margin-top: 0in; 
+.side-block {
+  margin-top: 0.5in; 
 }
 
-#contact ul{
+#contact ul {
   margin-top: 0.05in;
   padding-left: 0;
-  font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';
+  font-family: "Source Code Pro";
   font-weight: 400;
   line-height: 1.75;
 }
 
-#contact li > i{
-  width: 8pt; /* for text alignment */
+#contact li > i {
+  width: 9pt; /* for text alignment */
   text-align: right;
 }
 
-#skills{
+#skills {
   line-height: 1.5;
 }
 
-#skills ul{
+#skills ul {
   margin: 0.05in 0 0.15in;
   padding: 0;
 }
-#disclaimer{
+
+#skills h4 {
+  margin: 0.5rem 0 0 0;
+}
+#disclaimer {
   position: absolute;
   bottom: var(--sidebar-horizontal-padding);
   right: var(--sidebar-horizontal-padding);
@@ -358,12 +360,16 @@ li{
   font-style: italic;
   line-height: 1.1;
   text-align: right;
-  color: #FFF;
+  color: #777;
 }
 
-#disclaimer code{
-  color: #FFF;
+#disclaimer code {
+  color: #666;
   font-family: "Source Code Pro";
   font-weight: 400;
   font-style: normal;
+}
+
+#laurier {
+  display: none;
 }
